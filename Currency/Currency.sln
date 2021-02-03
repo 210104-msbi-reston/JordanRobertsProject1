@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Currency", "Currency\Currency.dtproj", "{E7A221F8-40B8-4E95-A252-A8C766D06324}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A221F8-40B8-4E95-A252-A8C766D06324}.Development|Default.ActiveCfg = Development
+		{E7A221F8-40B8-4E95-A252-A8C766D06324}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E0B552F-7B16-4794-9D2A-05C7EBF9CCF2}
+	EndGlobalSection
+EndGlobal

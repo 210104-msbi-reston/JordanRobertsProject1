@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ProjectOneSSIS", "ProjectOneSSIS\ProjectOneSSIS.dtproj", "{F644BB6A-A71C-41B0-B8B5-1B61876DB2B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F644BB6A-A71C-41B0-B8B5-1B61876DB2B5}.Development|Default.ActiveCfg = Development
+		{F644BB6A-A71C-41B0-B8B5-1B61876DB2B5}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33E9767D-0F6E-484D-A070-B86FDD065E25}
+	EndGlobalSection
+EndGlobal
