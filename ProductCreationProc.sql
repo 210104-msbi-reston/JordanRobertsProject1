@@ -1,3 +1,4 @@
+
 alter procedure p_product_creation @productid as int = null, @qty as int, @prodhouseid as int = null
 as
 begin
@@ -298,7 +299,7 @@ begin
 	end
 	else
 	begin
-		insert into distributor_order(OrderID, DistributorID, TotalCost, Ordered) values(@orderid, @did, @cost*@qty, DATEADD(mi, 600+RAND()*8, @lastdate))
+		insert into distributor_order(OrderID, DistributorID, TotalCost, Ordered) values(@orderid, @did, @cost*@qty*1.08, DATEADD(mi, 600+RAND()*8, @lastdate))
 		while @cono < @qty
 		begin
 			select @cono = @cono + 1
@@ -388,7 +389,7 @@ begin
 	end
 	else
 	begin
-		insert into subdistributor_order(OrderID, SubdistributorID, TotalCost, Ordered) values(@orderid, @sid, @cost*@qty*1.08, DATEADD(mi, 600+RAND()*8, @lastdate))
+		insert into subdistributor_order(OrderID, SubdistributorID, TotalCost, Ordered) values(@orderid, @sid, @cost*@qty*1.16, DATEADD(mi, 600+RAND()*8, @lastdate))
 		while @cono < @qty
 		begin
 			select @cono = @cono + 1
@@ -478,7 +479,7 @@ begin
 	end
 	else
 	begin
-		insert into channel_order(OrderID, ChannelID, TotalCost, Ordered) values(@orderid, @cid, @cost*@qty*1.16, DATEADD(mi, 600+RAND()*8, @lastdate))
+		insert into channel_order(OrderID, ChannelID, TotalCost, Ordered) values(@orderid, @cid, @cost*@qty*1.24, DATEADD(mi, 600+RAND()*8, @lastdate))
 		while @cono < @qty
 		begin
 			select @cono = @cono + 1
@@ -568,7 +569,7 @@ begin
 	end
 	else
 	begin
-		insert into retail_order(OrderID, SellerID, TotalCost, Ordered) values(@orderid, @rid, @cost*@qty*1.24, DATEADD(mi, 600+RAND()*8, @lastdate))
+		insert into retail_order(OrderID, SellerID, TotalCost, Ordered) values(@orderid, @rid, @cost*@qty*1.32, DATEADD(mi, 600+RAND()*8, @lastdate))
 		while @cono < @qty
 		begin
 			select @cono = @cono + 1
@@ -658,7 +659,7 @@ begin
 	end
 	else
 	begin
-		insert into customer_order(OrderID, CustomerID, TotalCost, Ordered) values(@orderid, @custid, @cost*@qty*1.32, DATEADD(mi, 600+RAND()*8, @lastdate))
+		insert into customer_order(OrderID, CustomerID, TotalCost, Ordered) values(@orderid, @custid, @cost*@qty*1.4, DATEADD(mi, 600+RAND()*8, @lastdate))
 		while @cono < @qty
 		begin
 			select @cono = @cono + 1
